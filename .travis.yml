@@ -6,7 +6,7 @@ env:
   global:
     # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
     #   via the "travis encrypt" command using the project repo's public key
-    - secure: "KOfJHBqx3I7GsY6OIiqBMN5iFkTpeGlj+WwXF/ZaGmG7bYtIx1641mH43ECoaxGH6I4Tkdf2VBX3xTSVaCeT8OO0K3Zr84MRqmfjfzTo1uGkwiZD3e/pahPVjOTb+IGPForskeooix6KgCJQfW6skh8EEy7EPnZTNXJw2XLujj4="
+    - secure: "c4jV4KRTF3YrML+To9pntpZH9fODEJ3KYAMFruzic5hYGKLVqLFtiM6dNqUgXQKSqbo+zPrCDcZ/Prh1JCslzNgVIiS3P0GaTNYk9F3gS3YQwLvWWmyLvjGfGuYRbxsc22gG1ASFLsxRVmO4kzFY+kdmHFwlUGVtyn1dVJXJ3wY="
   matrix:
     - CONF="--enable-openssl-install"
     - CONF="--enable-openssl-install --enable-python"
@@ -21,7 +21,7 @@ addons:
     project:
       name: "frankmorgner/openpace"
       description: "Cryptographic library for EAC version 2"
-    notification_email: morgner@informatik.hu-berlin.de
+    notification_email: oepen@informatik.hu-berlin.de
     build_command_prepend: autoreconf -vsi && ./configure --enable-openssl-install
     build_command: make
     branch_pattern: coverity_scan
